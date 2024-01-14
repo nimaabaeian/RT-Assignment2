@@ -38,7 +38,7 @@ src Directory:
  srv Directory:
 - LastTarget.srv: ROS service definition for retrieving the last entered target coordinates.
 - Average.srv: ROS service definition for calculating and providing the distance to the target and average velocity.
-- launch Directory:
+launch Directory:
 
 - assignment1.launch: ROS launch file executing various nodes and parameters needed for simulation.
 Custom Message

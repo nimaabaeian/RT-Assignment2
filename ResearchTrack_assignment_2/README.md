@@ -33,17 +33,20 @@ src Directory:
 - my_node_C.py: Offers a service to calculate and provide the average distance and velocity of the robot based on its position and velocity information and the window defined in the launch file.
 - CMakeLists.txt: Configuration file for building the package containing all other packages and dependencies.
 - package.xml: Package manifest file.
+  
   msg Directory:
 - Vel.msg: Custom ROS message structure definition representing the robot's position and velocity.
+
  srv Directory:
 - LastTarget.srv: ROS service definition for retrieving the last entered target coordinates.
 - Average.srv: ROS service definition for calculating and providing the distance to the target and average velocity.
-launch Directory:
 
+launch Directory:
 - assignment1.launch: ROS launch file executing various nodes and parameters needed for simulation.
 Custom Message
 - Vel.msg
 - Represents the robot's position and velocity structure for the custom message.
+
 Fields:
 - x: x-coordinate of the robot's position.
 - y: y-coordinate of the robot's position.
@@ -56,9 +59,10 @@ ROS service structure for the last entered target coordinates by the user.
 Fields:
 - target_x: x-coordinate of the last target entered.
 - target_y: y-coordinate of the last target entered.
-Average.srv
+- Average.srv
 
 ROS service structure that calculates and provides the average distance and velocity of the robot based on the average window.
+
 Fields:
 - dist: Distance between the robot and the target to be reached.
 - velocity_mean: Mean velocity of the robot.

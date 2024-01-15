@@ -1,14 +1,5 @@
 #! /usr/bin/env python3
 
-"""
-.. module:: node_a
-
-
-.. moduleauthor:: Vahid Bagherian v.bagherianno@gmail.com
-
-A node that implements an action client, allowing the user to set a target (x, y) or to cancel it. The node also publishes the robot position and velocity as a custom message (x,y, vel_x, vel_z), by relying on the values published on the topic /odom. 
-"""
-
 # Import necessary libraries
 import rospy
 from geometry_msgs.msg import Point, Pose, Twist
